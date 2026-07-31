@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Brasil 1958</title>
+
+<style>
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial;
+    background:#222;
+}
+
+.caixa{
+    position:relative;
+    width:900px;
+    height:520px;
+}
+
+img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:blur(2px);
+}
+
+.caixa::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,.25);
+}
+
+.topo, .baixo{
+    position:absolute;
+    color:#333;
+    z-index:1;
+    font-weight:bold;
+}
+
+.topo{
+    top:40px;
+    left:50%;
+    transform:translateX(-50%);
+    width:450px;
+    text-align:center;
+}
+
+.baixo{
+    left:40px;
+    bottom:50px;
+    width:340px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="caixa">
+    <img src="pele1958.jpg" alt="Pelé">
+
+    <div class="topo">
+        <h2>Campeão em 1958</h2>
+        <p>A Copa de 1958 marcou o primeiro título mundial do Brasil com vitória por 5 x 2 sobre a Suécia.</p>
+    </div>
+
+    <div class="baixo">
+        <h3>O Surgimento do Rei</h3>
+        <p>Com apenas 17 anos, Pelé brilhou na competição e marcou dois gols na final.</p>
+    </div>
+</div>
+
+</body>
+</html>
